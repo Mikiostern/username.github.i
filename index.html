@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Osobista Strona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #f4e1d2;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #d4a5a5;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #f4e1d2;
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #d4a5a5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .price-list {
+            list-style: none;
+            padding: 0;
+        }
+        .price-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Witamy na mojej stronie</h1>
+</header>
+
+<nav>
+    <a href="#about">O mnie</a>
+    <a href="#salon">Gabinet Kosmetyczny</a>
+    <a href="#contact">Kontakt</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#pricing">Cennik</a>
+    <a href="#blog">Blog</a>
+</nav>
+
+<section id="about" class="section">
+    <h2>O mnie</h2>
+    <p>Witaj! Jestem kosmetyczką z wieloletnim doświadczeniem. Moim celem jest zapewnienie najlepszej jakości usług kosmetycznych.</p>
+</section>
+
+<section id="salon" class="section">
+    <h2>Gabinet Kosmetyczny</h2>
+    <p>W naszym gabinecie oferujemy szeroki zakres zabiegów kosmetycznych dostosowanych do indywidualnych potrzeb każdego klienta.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Kontakt</h2>
+    <form>
+        <label for="name">Imię i Nazwisko:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <input type="submit" value="Wyślij">
+    </form>
+</section>
+
+<section id="gallery" class="section">
+    <h2>Galeria</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/100" alt="Galeria zdjęcie 1">
+        <img src="https://via.placeholder.com/100" alt="Galeria zdjęcie 2">
+        <img src="https://via.placeholder.com/100" alt="Galeria zdjęcie 3">
+        <!-- Dodaj więcej zdjęć według potrzeb -->
+    </div>
+</section>
+
+<section id="pricing" class="section">
+    <h2>Cennik</h2>
+    <ul class="price-list">
+        <li>Zabieg 1 - 100 PLN</li>
+        <li>Zabieg 2 - 150 PLN</li>
+        <li>Zabieg 3 - 200 PLN</li>
+        <!-- Dodaj więcej usług według potrzeb -->
+    </ul>
+</section>
+
+<section id="blog" class="section">
+    <h2>Blog</h2>
+    <article>
+        <h3>Wpis na blogu 1</h3>
+        <p>Treść pierwszego wpisu na blogu...</p>
+    </article>
+    <article>
+        <h3>Wpis na blogu 2</h3>
+        <p>Treść drugiego wpisu na blogu...</p>
+    </article>
+    <!-- Dodaj więcej wpisów według potrzeb -->
+</section>
+
+<footer>
+    <p>&copy; 2024 Moja Osobista Strona</p>
+</footer>
+
+</body>
+</html>
